@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neal O'Gorman</title>
+  <meta name="description" content="The personal website of Neal O'Gorman.">
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --text: #1c1b1a;
+      --muted: #6b6862;
+      --accent: #0f5c46;
+      --accent-contrast: #ffffff;
+      --card: #ffffff;
+      --border: #e6e2db;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --text: #ece9e4;
+        --muted: #a29d94;
+        --accent: #4fd1a5;
+        --accent-contrast: #0d1f19;
+        --card: #201e1b;
+        --border: #35322d;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+      flex: 1;
+    }
+    .eyebrow {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .lede {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 2.5rem 0 0.75rem;
+    }
+    p + p { margin-top: 1rem; }
+    .contact-card {
+      margin-top: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .contact-card p { margin-bottom: 1rem; }
+    .button {
+      display: inline-block;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      background: var(--accent);
+      color: var(--accent-contrast);
+      padding: 0.65rem 1.3rem;
+      border-radius: 8px;
+    }
+    .button:hover { filter: brightness(1.1); }
+    a { color: var(--accent); }
+    footer {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">nealogorman.com</p>
+    <h1>Neal O'Gorman</h1>
+    <p class="lede">Welcome — you've found my corner of the internet.</p>
+
+    <h2>About</h2>
+    <p>
+      This is the personal site of Neal O'Gorman. I'm using this space to share
+      what I'm working on, thinking about, and building. More to come soon.
+    </p>
+
+    <div class="contact-card">
+      <h2 style="margin-top:0">Get in touch</h2>
+      <p>The best way to reach me is by email.</p>
+      <a class="button" href="mailto:neal@nealogorman.com">Email me</a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 Neal O'Gorman
+  </footer>
+</body>
+</html>
