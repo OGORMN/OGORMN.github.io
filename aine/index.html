@@ -94,6 +94,34 @@
     }
     a { color: var(--accent-deep); }
     .sources { font-size: .95rem; }
+    details.med {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin: 1.6rem 0;
+      box-shadow: 0 2px 14px rgba(90, 70, 40, .05);
+    }
+    details.med summary {
+      cursor: pointer;
+      padding: 1.1rem 1.5rem;
+      font-weight: 600;
+      color: var(--accent-deep);
+      list-style: none;
+    }
+    details.med summary::before { content: '+ '; }
+    details.med[open] summary::before { content: '\2212\00a0'; }
+    details.med .inner {
+      padding: 0 1.5rem 1.3rem;
+      font-size: .98rem;
+    }
+    details.med .inner p + p { margin-top: .9rem; }
+    details.med code {
+      font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      font-size: .88em;
+      background: var(--tint);
+      padding: .1em .35em;
+      border-radius: 5px;
+    }
     footer {
       margin-top: 3.2rem;
       padding-top: 1.6rem;
@@ -224,6 +252,63 @@
       as she grows.
     </p>
 
+    <details class="med">
+      <summary>For the medically minded — the precise details</summary>
+      <div class="inner">
+        <p>
+          <strong>The variant.</strong> <code>NM_014727.3(KMT2B): c.4951del, p.(Val1651Trpfs*45)</code>,
+          heterozygous, in exon 23 of <em>KMT2B</em> (chromosome 19q13.12;
+          genomic position chr19:36,220,899 on GRCh37). Confirmed <em>de novo</em>:
+          both parents tested negative on blood samples.
+        </p>
+        <p>
+          <strong>What it does.</strong> A single guanine is deleted in exon 23, shifting the
+          reading frame at valine&nbsp;1651. The shifted frame runs into a premature stop signal
+          45 codons later — far short of the full ~2,700-amino-acid protein. Transcripts with a
+          premature stop this early are generally destroyed by the cell's quality control
+          (nonsense-mediated decay), so this copy of the gene most likely produces no protein at
+          all. The result is <em>haploinsufficiency</em> — one working copy instead of two —
+          which is the established disease mechanism in KMT2B-related disorders, and
+          protein-truncating variants like this one are the most commonly reported type.
+        </p>
+        <p>
+          <strong>Classification.</strong> Pathogenic under ACMG/ACGS criteria: PVS1 (a null
+          variant in a gene where loss of function is the known mechanism) plus PM2 — the
+          variant is absent from gnomAD, the reference database of more than 800,000 sequenced
+          individuals worldwide.
+        </p>
+        <p>
+          <strong>Has anyone else had this exact variant?</strong> Not that we can find. It does
+          not appear in the published literature, and the laboratory's scoring is consistent
+          with it being previously unreported. In genetics jargon it appears to be
+          <em>private</em> — unique to Áine. That is the norm for this gene rather than the
+          exception: reported KMT2B truncating variants are scattered along its length, and most
+          families carry their own. What is shared across families is the mechanism (one
+          non-working copy), so the published natural history and treatment outcomes apply to
+          her case regardless of the exact spelling.
+        </p>
+        <p>
+          <strong>How rare is rare?</strong> As of the May 2025 update of GeneReviews, about
+          246 individuals from 229 families had been described worldwide with the dystonia
+          presentation (DYT-KMT2B), and about 27 individuals from 25 families with the
+          non-dystonic neurodevelopmental presentation — roughly 270 people in the world's
+          medical literature, across Europe, the Americas, Asia and Australia. The true number
+          is certainly higher (mild and undiagnosed cases exist, and known families now number
+          in the hundreds), but it remains a condition most doctors will never see.
+          Paradoxically, among the genetic causes of childhood-onset generalised dystonia,
+          KMT2B is one of the most frequently found.
+        </p>
+        <p>
+          <strong>Inheritance notes.</strong> Because the variant arose <em>de novo</em> and
+          both parents tested negative, the chance of it recurring in a future pregnancy is
+          very low — around 1% is usually quoted, to allow for the rare situation where a
+          variant is present in a small fraction of a parent's egg or sperm cells (germline
+          mosaicism). Any children Áine herself may one day have would each carry a 50% chance
+          of inheriting the variant.
+        </p>
+      </div>
+    </details>
+
     <h2>Reasons to be positive</h2>
     <ul>
       <li>
@@ -276,6 +361,7 @@
       <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK493766/">KMT2B-Related Disorders — GeneReviews</a> (the standard medical reference)</li>
       <li><a href="https://www.kmt2bdystonia.org/">KMT2B Dystonia Foundation</a> (parent-founded community and research foundation)</li>
       <li><a href="https://www.citizen.health/caregiver-guide/kmt2b-related-disorders-newly-diagnosed">Caregiver guide for newly diagnosed families — Citizen Health</a></li>
+      <li><a href="https://link.springer.com/article/10.1007/s00702-026-03153-9">Clinical, imaging and genetic profile of KMT2B-related dystonia: a review of published cases — Journal of Neural Transmission (2026)</a></li>
     </ul>
 
     <footer>
