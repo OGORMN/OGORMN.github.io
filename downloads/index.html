@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloads — Neal O'Gorman</title>
+  <meta name="description" content="Download SynergyClone, a small software KVM for sharing one keyboard and mouse between two Windows PCs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304060c'/%3E%3Cpath d='M2 22 Q8 12 14 18 T26 16 Q29 15 30 12 L30 24 Q16 30 2 26 Z' fill='%232dd4bf'/%3E%3Cpath d='M4 10 L28 4' stroke='%23f472b6' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #04060c;
+      color: #e6f1f5;
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(720px, calc(100% - 2.4rem));
+      margin: 0 auto;
+      padding: 4.5rem 0 5rem;
+    }
+    .home {
+      display: inline-block;
+      margin-bottom: 2.2rem;
+      color: rgba(159, 200, 214, .72);
+      text-decoration: none;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-size: .68rem;
+    }
+    .home:hover { color: #fff; }
+    h1 {
+      font-weight: 200;
+      letter-spacing: .18em;
+      text-indent: .18em;
+      text-transform: uppercase;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      margin: 0 0 .4rem;
+      text-shadow: 0 0 24px rgba(103, 232, 249, .35);
+    }
+    .beamline {
+      width: min(46vw, 280px);
+      height: 1px;
+      margin: 1.1rem 0 1.6rem;
+      background: linear-gradient(90deg, #f472b6 0%, #67e8f9 70%, transparent);
+      box-shadow: 0 0 12px rgba(244, 114, 182, .45);
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 1.15rem;
+      margin: 0 0 .35rem;
+    }
+    .ver {
+      color: rgba(159, 200, 214, .8);
+      font-size: .92rem;
+      margin: 0 0 1rem;
+    }
+    p { margin: 0 0 .9rem; }
+    .card {
+      border: 1px solid rgba(103, 232, 249, .28);
+      background: rgba(8, 20, 30, .45);
+      border-radius: 14px;
+      padding: 1.35rem 1.4rem 1.45rem;
+      box-shadow: 0 0 28px rgba(45, 212, 191, .06);
+    }
+    .btn {
+      display: inline-block;
+      margin: .35rem 0 1rem;
+      padding: .75rem 1.15rem;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #041016;
+      background: linear-gradient(90deg, #67e8f9, #2dd4bf);
+      font-weight: 650;
+      letter-spacing: .02em;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .meta {
+      color: rgba(159, 200, 214, .78);
+      font-size: .88rem;
+    }
+    code, .hash {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: .78rem;
+      word-break: break-all;
+    }
+    .hash {
+      display: block;
+      margin-top: .35rem;
+      color: rgba(226, 241, 245, .82);
+    }
+    ol { margin: .2rem 0 0; padding-left: 1.2rem; }
+    li { margin: .35rem 0; }
+    h3 {
+      margin: 2rem 0 .6rem;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(159, 200, 214, .9);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="home" href="/">Neal O&rsquo;Gorman</a>
+    <h1>Downloads</h1>
+    <div class="beamline" aria-hidden="true"></div>
+
+    <article class="card">
+      <h2>SynergyClone</h2>
+      <p class="ver">Version 0.12.0 · Windows 10/11, 64-bit · 63 MB</p>
+      <p>Share one keyboard and mouse between two PCs on the same network, with clipboard sync. One file, no installer, and no separate .NET install.</p>
+      <a class="btn" href="SynergyClone-0.12.0-win-x64.zip">Download for Windows</a>
+      <p class="meta">SHA-256<code class="hash">c77020ce1f92fbb6c640931a5874b634ea303344d07d9cb28d864d44c122f339</code></p>
+    </article>
+
+    <h3>Put it on the other PC</h3>
+    <ol>
+      <li>Download the zip on both computers and extract it. Both machines need this same version.</li>
+      <li>Double-click <code>SynergyClone.exe</code> on each one.</li>
+      <li>On the PC you type on, choose <strong>Server</strong> and which edge the other screen sits on.</li>
+      <li>On the other PC, choose <strong>Client</strong>. Leave the address blank and it finds the server on the network.</li>
+      <li>If Windows Firewall asks, allow it on private networks.</li>
+      <li>Move the mouse off that edge of the server screen. <strong>Ctrl+Alt+F12</strong> on the server always brings control back.</li>
+    </ol>
+    <p class="meta" style="margin-top:1.2rem">The first run saves your answers beside the exe. After that, double-clicking it just starts. A tray icon shows grey while waiting, green when connected, and blue while you are controlling the other PC.</p>
+  </main>
+</body>
+</html>

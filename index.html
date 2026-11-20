@@ -124,6 +124,17 @@
       transform: translateY(-2px);
       color: #ffffff;
     }
+    .dl {
+      pointer-events: auto;
+      margin-top: 1.15rem;
+      font-size: .68rem;
+      letter-spacing: .42em;
+      text-indent: .42em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(159, 200, 214, .72);
+    }
+    .dl:hover { color: #ffffff; }
     @media (prefers-reduced-motion: reduce) {
       .cardo, .cardi, h1 { animation: none !important; }
       .cardo { opacity: var(--op); transform: translateY(var(--staticY)) !important; }
@@ -144,6 +155,7 @@
         <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>
       </svg>
     </a>
+    <a class="dl" href="/downloads/">Downloads</a>
   </main>
 
   <script>
