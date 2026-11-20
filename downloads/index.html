@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Downloads — Neal O'Gorman</title>
-  <meta name="description" content="Download SynergyClone, a small software KVM for sharing one keyboard and mouse between two Windows PCs.">
+  <meta name="description" content="Downloads from Neal O'Gorman: SynergyClone and OCRCrop for Windows.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304060c'/%3E%3Cpath d='M2 22 Q8 12 14 18 T26 16 Q29 15 30 12 L30 24 Q16 30 2 26 Z' fill='%232dd4bf'/%3E%3Cpath d='M4 10 L28 4' stroke='%23f472b6' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     * { box-sizing: border-box; }
@@ -63,6 +63,7 @@
       background: rgba(8, 20, 30, .45);
       border-radius: 14px;
       padding: 1.35rem 1.4rem 1.45rem;
+      margin-bottom: 1rem;
       box-shadow: 0 0 28px rgba(45, 212, 191, .06);
     }
     .btn {
@@ -117,7 +118,15 @@
       <p class="meta">SHA-256<code class="hash">c77020ce1f92fbb6c640931a5874b634ea303344d07d9cb28d864d44c122f339</code></p>
     </article>
 
-    <h3>Put it on the other PC</h3>
+    <article class="card">
+      <h2>OCRCrop</h2>
+      <p class="ver">Version 1.0.0 · Windows 10/11, 64-bit · 105 MB</p>
+      <p>Crop any part of the screen and paste the text. Press <strong>Ctrl+Shift+Space</strong>, drag a box, and the words are copied as soon as they are read. Tables paste into Excel. No Python install.</p>
+      <a class="btn" href="https://github.com/OGORMN/OGORMN.github.io/releases/download/ocrcrop-1.0.0/OCRCrop-1.0.0-win-x64.zip">Download for Windows</a>
+      <p class="meta">SHA-256<code class="hash">c7551fdd422a055aa61d2f02d09a770e8b8cbb153bee733da568fe79a40bc66d</code></p>
+    </article>
+
+    <h3>SynergyClone — on the other PC</h3>
     <ol>
       <li>Download the zip on both computers and extract it. Both machines need this same version.</li>
       <li>Double-click <code>SynergyClone.exe</code> on each one.</li>
@@ -127,6 +136,15 @@
       <li>Move the mouse off that edge of the server screen. <strong>Ctrl+Alt+F12</strong> on the server always brings control back.</li>
     </ol>
     <p class="meta" style="margin-top:1.2rem">The first run saves your answers beside the exe. After that, double-clicking it just starts. A tray icon shows grey while waiting, green when connected, and blue while you are controlling the other PC.</p>
+
+    <h3>OCRCrop — on the other PC</h3>
+    <ol>
+      <li>Download the zip and extract the whole folder. Keep <code>OCRCrop.exe</code> next to the <code>_internal</code> folder.</li>
+      <li>Double-click <code>OCRCrop.exe</code>. A crop icon appears in the system tray. The first start takes a few seconds while the reader loads.</li>
+      <li>Press <strong>Ctrl+Shift+Space</strong>, drag around the text, and release. Paste with <strong>Ctrl+V</strong>.</li>
+      <li>Middle-click the tray icon to read an image already on the clipboard, such as a Win+Shift+S snip.</li>
+    </ol>
+    <p class="meta" style="margin-top:1.2rem">Esc cancels a selection. The tray menu has history and Start with Windows. Settings stay on that PC and are not in the download.</p>
   </main>
 </body>
 </html>
